@@ -1,6 +1,7 @@
 from django.http import JsonResponse
 from django.views import View
 from .models import Category, Product
+from django.shortcuts import render
 
 # Create your views here.
 class ProductView(View):
@@ -15,3 +16,5 @@ class CategoryView(View):
         {'categories': categories}
         return JsonResponse(categories, safe=False)
 
+def Catalogo(request):
+    return render (request, 'catalogo.html')
