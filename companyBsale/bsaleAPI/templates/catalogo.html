@@ -28,17 +28,52 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <h3>Filtros</h3>
+                <div class="d-none d-md-block">
+                    <div class="filters" id="filters">
+                        <div class="filter-item">
+                            <h3>Filtros</h3>  
+                            <div class="form-check"><input class="form-check-input" type="radio"
+                                name="filter" id="formCheck-1">
+                                <label class="form-check-label" for="formCheck-1">Bebida Energetica</label>
+                            </div>
+                            <div class="form-check"><input class="form-check-input" type="radio"
+                                name="filter" id="formCheck-2">
+                                <label class="form-check-label" for="formCheck-2">Pisco</label>
+                            </div>
+                            <div class="form-check"><input class="form-check-input" type="radio"
+                                name="filter" id="formCheck-3">
+                                <label class="form-check-label" for="formCheck-3">Ron</label>
+                            </div>
+                            <div class="form-check"><input class="form-check-input" type="radio"
+                                name="filter" id="formCheck-4">
+                                <label class="form-check-label" for="formCheck-4">Bebida</label>
+                            </div>
+                            <div class="form-check"><input class="form-check-input" type="radio"
+                                name="filter" id="formCheck-5">
+                                <label class="form-check-label" for="formCheck-5">Snack</label>
+                            </div>
+                            <div class="form-check"><input class="form-check-input" type="radio"
+                                name="filter" id="formCheck-6">
+                                <label class="form-check-label" for="formCheck-6">Cerveza</label>
+                            </div>
+                            <div class="form-check"><input class="form-check-input" type="radio"
+                                name="filter" id="formCheck-7">
+                                <label class="form-check-label" for="formCheck-7">Vodka</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9"> 
                 <div class="row" id="tabla">
                    <!--Aqui comienza el relleno de productos-->
-                    <div class="col-12 col-md-6 col-lg-4" id="producto"> 
+                    <div class="col-12 col-md-6 col-lg-4"> 
+                        <div class="card" id="producto">
                         <div class="thumbnail">
                             <img src="https://dojiw2m9tvv09.cloudfront.net/11132/product/misterbig3308256.jpg " width="150" height="150"
                                 alt="...">
-                            <div class="caption">
-                                <h3>ENERGETICA MR BIG</h3>
+                            <div class="caption" id="nombre">
+                                <h4>ENERGETICA MR BIG</h4>
                                 <p
                                     style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: large;">
                                     <strong>Precio:</strong> $1,000
@@ -47,6 +82,7 @@
                                     <a href="#" class="btn btn-primary" role="button">Button</a></p>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
